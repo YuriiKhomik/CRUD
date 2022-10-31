@@ -43,3 +43,21 @@ function addBook(book) {
 };
 
 addBook(newBook);
+
+addBook({
+    "title": "My My My Book",
+    "subtitle": "Just Training",
+    "author": "Yuras Karas",
+    "published": "1986-03-11T00:00:00.000Z",
+    "publisher": "Weimar Guten Büch",
+    "pages": 2,
+    "description": "Ta y take",
+    "website": "http://navyvorit.com/",
+})
+    .then(renderBook)
+    .catch(error => console.log(error));
+
+function renderBook(book) {
+    console.log('прийшла відповідь від бекенду, можна малювати');
+    console.log(book)
+};
