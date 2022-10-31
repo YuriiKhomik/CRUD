@@ -1,1 +1,0 @@
-{"mappings":"AAAAA,MAAM","sources":["src/partials/r-get.js"],"sourcesContent":["fetch('http://localhost:4040/books')"],"names":["fetch"],"version":3,"file":"index.bffb2486.js.map"}
