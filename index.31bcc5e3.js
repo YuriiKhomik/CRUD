@@ -1,0 +1,2 @@
+function o(o){const e={strawberry:"полуниця",kiwi:"ківі",apple:"ябко",blackberry:"ожинка"};return new Promise((t=>{setTimeout((()=>{t(e[o])}),500)}))}!async function(){console.time("aMakeSmoothie");const e=await o("apple");console.log(e);const t=await o("kiwi");console.log(t);const a=await o("strawberry");console.log(a);const n=await o("blackberry");console.log(n),console.timeEnd("aMakeSmoothie")}();
+//# sourceMappingURL=index.31bcc5e3.js.map
