@@ -1,0 +1,2 @@
+(function(t){const o={method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(t)};return fetch("http://localhost:2020/books",o).then((t=>t.json())).then(console.log)})({title:"My My My Book",subtitle:"Just Training",author:"Yuras Karas",published:"1986-03-11T00:00:00.000Z",publisher:"Weimar Guten Büch",pages:2,description:"Ta y take",website:"http://navyvorit.com/"}).then((function(t){console.log("прийшла відповідь від бекенду, можна малювати")})).catch((t=>console.log(t)));
+//# sourceMappingURL=index.7a251a14.js.map
