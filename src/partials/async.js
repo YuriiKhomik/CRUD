@@ -108,11 +108,21 @@ function getFruit(name) {
         apple: 'ябко',
         blackberry: 'ожинка',
     };
+    // // проміс, в який передаємо функцію, всерелині якої запускаємо таймаут, всередині якого даємо функцію, яку потрібно запустити
+    // return new Promise(resolve => setTimeout(() => resolve(fruits[name]), 500));
 
-    return new Promise(resolve => setTimeout(() => resolve(fruits[name]), 500));
+    // or:
+
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(fruits[name]);
+        }, 500);
+    });
 }
 
 async function aMakeSmoothie() {
+    console.time('aMakeSmoothie');
+
     const apple = await getFruit('apple');
     console.log(apple);
 
@@ -124,6 +134,8 @@ async function aMakeSmoothie() {
 
     const blackberry = await getFruit('blackberry');
     console.log(blackberry);
+
+    console.timeEnd('aMakeSmoothie');
 }
 
 aMakeSmoothie();
