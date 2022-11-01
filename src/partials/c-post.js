@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:4040';
+const BASE_URL = 'http://localhost:2020';
 
 const newBook = {
 
@@ -34,7 +34,7 @@ function addBook(book) {
         headers: {
         'Content-Type': 'application/json'
         },
-        body: JSON.stringify(newBook)
+        body: JSON.stringify(book)
     }
     return fetch(`${BASE_URL}/books`, options)
         .then(res => res.json())
@@ -42,7 +42,7 @@ function addBook(book) {
 
 };
 
-addBook(newBook);
+// addBook(newBook);
 
 addBook({
     "title": "My My My Book",
@@ -59,5 +59,4 @@ addBook({
 
 function renderBook(book) {
     console.log('прийшла відповідь від бекенду, можна малювати');
-    console.log(book)
 };
