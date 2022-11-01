@@ -51,15 +51,15 @@
 
 // console.log('After try...catch');
 
-try {
-    console.log('Inside try before myVar');
+// try {
+//     console.log('Inside try before myVar');
 
-    myVar;
+//     myVar;
 
-    console.log('Inside try after myVar');
-} catch (error) {
-    console.log(error);
-    console.log('Error!');
-}
+//     console.log('Inside try after myVar');
+// } catch (error) {
+//     console.log(error);
+//     console.log('Error!');
+// }
 
-console.log('After try...catch');
+// console.log('After try...catch');
