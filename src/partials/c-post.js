@@ -1,16 +1,15 @@
 const BASE_URL = 'http://localhost:2020';
 
 const newBook = {
-
-    "title": "My Super Amazing Book",
-    "subtitle": "Just Training",
-    "author": "Yurii Khomik",
-    "published": "1986-03-11T00:00:00.000Z",
-    "publisher": "Weimar Guten Büch",
-    "pages": 995,
-    "description": "Ta y take",
-    "website": "http://navyvorit.com/",
-}
+    title: 'My Extra Amazing Book',
+    subtitle: 'Just Training',
+    author: 'Yurii Khomik',
+    published: '1986-03-11T00:00:00.000Z',
+    publisher: 'Weimar Guten Büch',
+    pages: 995,
+    description: 'Ta y take',
+    website: 'http://navyvorit.com/',
+};
 
 // // ми кажемо:
 // const options = {
@@ -32,31 +31,30 @@ function addBook(book) {
     const options = {
         method: 'POST',
         headers: {
-        'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
         },
-        body: JSON.stringify(book)
-    }
+        body: JSON.stringify(book),
+    };
     return fetch(`${BASE_URL}/books`, options)
         .then(res => res.json())
         .then(console.log);
+}
 
-};
+addBook(newBook);
 
-// addBook(newBook);
+// addBook({
+//     "title": "My My My Book",
+//     "subtitle": "Just Training",
+//     "author": "Yuras Karas",
+//     "published": "1986-03-11T00:00:00.000Z",
+//     "publisher": "Weimar Guten Büch",
+//     "pages": 2,
+//     "description": "Ta y take",
+//     "website": "http://navyvorit.com/",
+// })
+//     .then(renderBook)
+//     .catch(error => console.log(error));
 
-addBook({
-    "title": "My My My Book",
-    "subtitle": "Just Training",
-    "author": "Yuras Karas",
-    "published": "1986-03-11T00:00:00.000Z",
-    "publisher": "Weimar Guten Büch",
-    "pages": 2,
-    "description": "Ta y take",
-    "website": "http://navyvorit.com/",
-})
-    .then(renderBook)
-    .catch(error => console.log(error));
-
-function renderBook(book) {
-    console.log('прийшла відповідь від бекенду, можна малювати');
-};
+// function renderBook(book) {
+//     console.log('прийшла відповідь від бекенду, можна малювати');
+// };

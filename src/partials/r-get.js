@@ -1,15 +1,33 @@
 const BASE_URL = 'http://localhost:4040';
 
-function fetchBooks() {
-    fetch(`${BASE_URL}/books`).then(res => res.json());
-};
+// function fetchBooks() {
+//     fetch(`${BASE_URL}/books`).then(res => res.json());
+// }
 
-function fetchBookById(bookId) {
-    fetch(`${BASE_URL}/books/${bookId}`).then(res => res.json());
-};
+// or via async await
 
-fetchBooks();
+async function fetchBooks() {
+    const response = await fetch(`${BASE_URL}/books`);
+    const books = await response.json();
+    return books;
+}
 
-fetchBookById(2);
+// biId
 
-fetchBookById(7);
+// function fetchBookById(bookId) {
+//     fetch(`${BASE_URL}/books/${bookId}`).then(res => res.json());
+// }
+
+// or via async await
+
+async function fetchBookById(bookId) {
+    const response = await fetch(`${BASE_URL}/books/${bookId}`);
+    const book = await response.json();
+    return book;
+}
+
+// fetchBooks();
+
+// fetchBookById(2);
+
+// fetchBookById(7);

@@ -79,7 +79,7 @@
     },
     {
       "id": 8,
-      "title": "Rethinking Productivity in Software Engineering",
+      "title": "My Super Ultra Amazing Book",
       "subtitle": "",
       "author": "Caitlin Sadowski, Thomas Zimmermann",
       "published": "2019-05-11T00:00:00.000Z",
@@ -111,7 +111,7 @@
       "id": 10
     },
     {
-      "title": "My My My Book",
+      "title": "My Superb Amazing Book",
       "subtitle": "Just Training",
       "author": "Yuras Karas",
       "published": "1986-03-11T00:00:00.000Z",
@@ -119,7 +119,62 @@
       "pages": 2,
       "description": "Ta y take",
       "website": "http://navyvorit.com/",
-      "id": 11
+      "id": 12
+    },
+    {
+      "title": "My Extra Amazing Book",
+      "subtitle": "Just Training",
+      "author": "Yurii Khomik",
+      "published": "1986-03-11T00:00:00.000Z",
+      "publisher": "Weimar Guten Büch",
+      "pages": 995,
+      "description": "AUAUAUAUAUA",
+      "website": "http://navyvorit.com/",
+      "id": 13
+    },
+    {
+      "title": "My Extra Amazing Book",
+      "subtitle": "Just Training",
+      "author": "Yurii Khomik",
+      "published": "1986-03-11T00:00:00.000Z",
+      "publisher": "Weimar Guten Büch",
+      "pages": 995,
+      "description": "Ta y take",
+      "website": "http://navyvorit.com/",
+      "id": 14
+    },
+    {
+      "title": "My Just Amazing Book",
+      "subtitle": "Just Training",
+      "author": "Yurii Khomik",
+      "published": "1986-03-11T00:00:00.000Z",
+      "publisher": "Weimar Guten Büch",
+      "pages": 995,
+      "description": "Ta y take",
+      "website": "http://navyvorit.com/",
+      "id": 15
+    },
+    {
+      "title": "My Extra Amazing Book",
+      "subtitle": "Just Training",
+      "author": "Yurii Khomik",
+      "published": "1986-03-11T00:00:00.000Z",
+      "publisher": "Weimar Guten Büch",
+      "pages": 995,
+      "description": "Ta y take",
+      "website": "http://navyvorit.com/",
+      "id": 16
+    },
+    {
+      "title": "My Extra Amazing Book",
+      "subtitle": "Just Training",
+      "author": "Yurii Khomik",
+      "published": "1986-03-11T00:00:00.000Z",
+      "publisher": "Weimar Guten Büch",
+      "pages": 995,
+      "description": "Ta y take",
+      "website": "http://navyvorit.com/",
+      "id": 17
     }
   ]
 }

@@ -170,41 +170,41 @@
 
 // aMakeSmoothie();
 
-// TRY...CATCH
+// // TRY...CATCH
 
-function getFruit(name) {
-    const fruits = {
-        strawberry: 'полуничка',
-        kiwi: 'ківі',
-        apple: 'ябко',
-        blackberry: 'ожинка',
-    };
-    // // проміс, в який передаємо функцію, всередині якої запускаємо таймаут, всередині якого даємо функцію, яку потрібно запустити
-    // return new Promise(resolve => setTimeout(() => resolve(fruits[name]), 500));
+// function getFruit(name) {
+//     const fruits = {
+//         strawberry: 'полуничка',
+//         kiwi: 'ківі',
+//         apple: 'ябко',
+//         blackberry: 'ожинка',
+//     };
+//     // // проміс, в який передаємо функцію, всередині якої запускаємо таймаут, всередині якого даємо функцію, яку потрібно запустити
+//     // return new Promise(resolve => setTimeout(() => resolve(fruits[name]), 500));
 
-    // or:
+//     // or:
 
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(fruits[name]);
-        }, 500);
-    });
-}
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(fruits[name]);
+//         }, 500);
+//     });
+// }
 
-async function aMakeSmoothie() {
-    try {
-        const apple = getFruit('apple');
-        const kiwi = getFruit('kiwi');
-        const strawberry = getFruit('strawberry');
-        const blackberry = getFruit('blackberry');
+// async function aMakeSmoothie() {
+//     try {
+//         const apple = getFruit('apple');
+//         const kiwi = getFruit('kiwi');
+//         const strawberry = getFruit('strawberry');
+//         const blackberry = getFruit('blackberry');
 
-        const fruits = await Promise.all([apple, kiwi, strawberry, blackberry]);
-        console.log(fruits);
-        // асинхронна функція повертає проміс і те, що ми повернемо у зовнішній код - буде результат цього промісу
-        return fruits;
-    } catch (error) {
-        console.log(error);
-    }
-}
-// асинхронна функція повертає проміс і те, що ми повернемо у зовнішній код - буде результат цього промісу
-aMakeSmoothie().then(fruits => console.log(fruits));
+//         const fruits = await Promise.all([apple, kiwi, strawberry, blackberry]);
+//         console.log(fruits);
+//         // асинхронна функція повертає проміс і те, що ми повернемо у зовнішній код - буде результат цього промісу
+//         return fruits;
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+// // асинхронна функція повертає проміс і те, що ми повернемо у зовнішній код - буде результат цього промісу
+// aMakeSmoothie().then(fruits => console.log(fruits));

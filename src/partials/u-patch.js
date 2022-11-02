@@ -12,25 +12,42 @@ const BASE_URL = 'http://localhost:4040';
 // fetch(`${BASE_URL}/books/16`, options)
 //     .then(res => res
 //     .json()).then(console.log);
-    
-// і заливаємо то всьо в функцію
 
-function updateBookById(update, bookId) {
+// // і заливаємо то всьо в функцію
+
+// function updateBookById(update, bookId) {
+//     const options = {
+//         method: 'PATCH',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+
+//         body: JSON.stringify(update),
+//     };
+
+//     return fetch(`${BASE_URL}/books/${bookId}`, options)
+//     .then(res => res.json())
+// };
+
+// updateBookById({ title: 'My Just Amazing Book' }, 15);
+// updateBookById({ description: 'AUAUAUAUAUA' }, 13);
+// updateBookById({ pages: 2, author: 'Yuras Karas' }, 12);
+
+// or via async await
+
+async function updateBookById(update, bookId) {
     const options = {
         method: 'PATCH',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
         },
 
         body: JSON.stringify(update),
     };
 
-    return fetch(`${BASE_URL}/books/${bookId}`, options)
-    .then(res => res.json())
-};
+    const response = await fetch(`${BASE_URL}/books/${bookId}`, options);
+    const updatedBook = await response.json();
+    return updatedBook;
+}
 
-updateBookById({ title: 'My Just Amazing Book' }, 15);
-updateBookById({ description: 'AUAUAUAUAUA' }, 13);
-updateBookById({ pages: 2, author: 'Yuras Karas' }, 12);
-
-
+updateBookById({ title: 'My Superb Amazing Book' }, 12);
